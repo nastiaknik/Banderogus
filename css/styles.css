@@ -1,0 +1,275 @@
+:root {
+  --accent-black-color-text: #010101;
+  --main-color-text: #181d1f;
+  --accent-color: #ff6b0a;
+  --white-color: #ffffff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  height: 100%;
+  color: var(--main-color-text);
+  line-height: calc(24 / 16);
+}
+
+.hero-section {
+  background: linear-gradient(
+    270deg,
+    #c4c4c4 0.16%,
+    #a5deff 0.17%,
+    #fcfeff 99.86%
+  );
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.header {
+  margin-top: 32px;
+  margin-bottom: 56px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  margin-right: 16px;
+}
+
+.logo-descr {
+  color: var(--accent-black-color-text);
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  font-weight: 500;
+}
+
+.container-row {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.container-gus {
+  background-color: var(--white-color);
+  padding: 56px 56px;
+  width: 573px;
+  align-self: center;
+}
+
+.text-semibold {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.accent-text {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: calc(72 / 64);
+  color: var(--accent-black-color-text);
+  margin-bottom: 24px;
+}
+
+.text {
+  width: 440px;
+  padding-bottom: 12px;
+}
+
+.button {
+  font-family: inherit;
+  line-height: calc(24 / 16);
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 12px 24px;
+  gap: 10px;
+  border: 0;
+  margin-top: 36px;
+}
+.button:focus,
+.button:hover {
+  background-color: orangered;
+}
+
+.banderogus-img {
+  align-self: flex-end;
+}
+
+.gus-facts {
+  margin-top: 56px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: calc(100 / 48);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+
+.description {
+  text-align: center;
+  width: 875px;
+
+  margin: 0 auto;
+}
+
+.facts-container {
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+
+.fact-caption {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  padding-top: 12px;
+  padding-bottom: 32px;
+  padding-left: 47px;
+}
+
+.fact {
+  width: 280px;
+  padding-left: 47px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-footer {
+  background: linear-gradient(
+    269.82deg,
+    #c4c4c4 0.16%,
+    #b6e4ff 0.17%,
+    #ffffff 99.86%
+  );
+  width: 1170px;
+  padding: 72px 0;
+  margin: 0 92px;
+}
+
+.trezub {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-form-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(27, 29, 31, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-form-cont {
+  background: var(--white-color);
+  padding: 32px 92px 60px 92px;
+  position: relative;
+}
+
+.modal-form-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: black;
+  margin: 32px 0 12px 0;
+}
+
+.modal-form-descr {
+  color: black;
+  margin-bottom: 24px;
+}
+
+.modal-form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.modal-field-name {
+  margin-bottom: 8px;
+  color: black;
+}
+
+.modal-field-input {
+  box-sizing: border-box;
+  height: 48px;
+  border: 1px solid #005bbb;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  padding: 4px 8px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 16px;
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 2px 5px;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.close-btn:hover,
+.close-btn:focus {
+  font-size: 17px;
+  background-color: orangered;
+  color: white;
+}
+
+.modal-descr {
+  margin-bottom: 0;
+}
+
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
