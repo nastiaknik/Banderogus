@@ -286,8 +286,8 @@ body {
   border: 0;
   margin-top: 36px;
 }
-.button:focus,
-.button:hover {
+.launch-button:focus,
+.launch-button:hover {
   background-color: orangered;
 }
 
